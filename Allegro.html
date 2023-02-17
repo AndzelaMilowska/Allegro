@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<head>
+<title>Allegro</title>
+<script src="Allegro.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="Allegro layout reproduction for practice">
+<meta name="author" content="Miłowska">
+<link rel="icon" href="https://allegro.pl/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="Allegro.css" />
+</head>
+
+<body>
+ <!--Navigation-->
+<div id='navigation' class="navigation">
+    <div id="logo" class="logo nav">  <!--LOGO-->
+        <img src="https://assets.allegrostatic.com/metrum/metrum-brand/allegro-347440b030.svg" alt="Allegro.pl">
+    </div>
+    <form id="searchbar" class="searchbar nav">  <!--SEARCHBAR-->
+        <div id="searchBase" class="searchBase nav">
+        <span id="searchSentence">
+              <label for="user_sentence">czego szukasz?</label>
+            <input type="text" id="sentence" name="user_sentence" />
+            </span>
+            <span id="multiserch">
+                <button type="button">szukaj wielu</button>
+            </span>
+        </div>
+            
+           <div class="categoriesBlock">
+            <select name="category" id="category-select" class="category-select">
+                <option value="">Wszystkie kategorie  </option>
+                <optgroup label="Kategorie">
+                    <option value="dom-i-ogrod">Dom i Ogród</option>
+                    <option value="dziecko">Dziecko</option>
+                    <option value="elektronika">Elektronika</option>
+                    <option value="firma-i-uslugi">Firma i usługi</option>
+                    <option value="kolekcje-i-sztuka">Kolekcje i sztuka</option>
+                    <option value="kultura-i-rozrywka">Kultura i rozrywka</option>
+                    <option value="moda">Moda</option>
+                    <option value="motoryzacja">Motoryzacja</option>
+                    <option value="nieruchomosci">Nieruchomości</option>
+                    <option value="sport-i-turystyka">Sport i turystyka</option>
+                    <option value="supermarket">Supermarket</option>
+                    <option value="uroda">Uroda</option>
+                    <option value="zdrowie">Zdrowie</option>
+                </optgroup>
+                <optgroup label="Inne opcje">
+                    <option value="cele-charytatywne">Cele charytatywne</option>
+                    <option value="organizacje-charytatywne">Organizacje charytatywne</option>
+                    <option value="sprzedawcy">Sprzedawcy</option>
+                    <option value="zakonczone">Zakończone</option>
+                </optgroup>
+
+</select>
+<img src="https://assets.allegrostatic.com/metrum/icon/arrowhead-9148b8f39c.svg" class="searchArrow">
+           </div>
+<span class="search">
+    <button type="button">Szukaj <img class='loupe' src='https://a.allegroimg.com/original/342671/0c4bcbf142b88c13c691bcadf607/action-common-magnifying-glass-4f33605830.svg'></button>
+</span>
+    </form>
+    <div class="greyIcons">
+    <div id="localization" class="localization nav"> <!--LOCALIZATION-->
+        <img src="https://a.allegroimg.com/original/12f062/2fe911ce48a0834185423b139ac6">
+    </div>
+    <div id="followed" class="followed nav icons">    <!--FOLLOWED-->
+        <img src="https://assets.allegrostatic.com/metrum/icon/star-empty-2c3f1d6b0f.svg">
+    </div>
+    <div id="messages" class="messages nav icons"> <!--MESSAGES-->
+        <img src="https://assets.allegrostatic.com/metrum/icon/chat-8dd2f8c308.svg">
+    </div>
+    <div id="notifications" class="notifications nav icons"> <!--NOTIFICATIONS-->
+        <img src="https://assets.allegrostatic.com/metrum/icon/bell-034065f63b.svg">
+    </div>
+    <div id="cart" class="cart nav icons"> <!--CART-->
+        <img src="https://assets.allegrostatic.com/metrum/icon/bag-c9f42da6df.svg">
+    </div>
+    <div id="profileSmall" class="profileSmall nav icons"> <!--CART-->
+        <img src="https://a.allegroimg.com/original/341d65/f72d7eef4b92b2ccace58549911b/action-common-user-fc042bf682.svg">
+    </div>
+    <button id="profile" class="profile nav"> <!--PROFILE-->
+       <span id="smart">
+        <span class="beSmart"> 
+        bądź <img src="https://assets.allegrostatic.com/metrum/icon/smart-098a60541f.svg" width="48" height="16">
+        </span>
+        <div class='nickname'>Andzela</div>
+    </span>
+        <div class="profileArrow"><img src="https://assets.allegrostatic.com/metrum/icon/arrowhead-9148b8f39c.svg"></div>
+    </button>
+</div>
+</div>
+
+
+<!--Categories-->
+<div id="categories" class="categories">
+    <button id="categories-selector" class="categories-selector"> 
+        Kategorie <img src="https://assets.allegrostatic.com/metrum/icon/arrowhead-9148b8f39c.svg" class="categoriesArrow">
+    </button>
+    <a href ="https://allegro.pl/strefaokazji" id="occasions">Okazje</a>
+    <a href ="https://allegro.pl/kampania/monety/promocje" id="coinPromo">Promocje z monetami</a>
+    <a href ="https://allegrolokalnie.pl/?utm_source=allegro&utm_medium=promoted_links&utm_campaign=al_on_a/" id="localAllegro">Allegro Lokalnie</a>
+    <a href ="https://allegro.pl/premiery" id="premieres">Premiery</a>
+    <a href ="https://allegro.pl/artykuly" id="inspires">Allegro Inspiruje</a>
+</div>
+
+<!--Baner-->
+<div id="carousel" class="carousel">
+    <button id="next-slide" class="slide-button next-slide"><img src="https://assets.allegrostatic.com/metrum/icon/arrowhead-9148b8f39c.svg"></button>
+    <button id="prev-slide" class="slide-button prev-slide"><img src="https://assets.allegrostatic.com/metrum/icon/arrowhead-9148b8f39c.svg"></button>
+    <div class="slides-container" id="slides-container">
+        <a class="slide slide01" href="https://allegro.pl/strefaokazji/allegro-days">
+            <div class="slide-left slide01">
+                <h1>1 dni tańszych zakupów</h1>
+                <h2>od poniedziałku do środy, 6 - 8 litego</h2>
+            </div>
+            <div class="slide-right slide01">
+                <img src="https://a.allegroimg.com/original/12ccf8/db0f1d5a4b41b66d3abcc9fba242">
+            </div>
+        
+        </a>
+
+        <a class="slide slide02" id="slide" href="https://allegro.pl/strefaokazji/allegro-days">
+            <div class="slide-left slide02">
+                <h1>2 dni tańszych zakupów</h1>
+                <h2>od poniedziałku do środy</h2>
+                <p></p>
+            </div>
+            <div class="slide-right slide02">
+                <img src="https://a.allegroimg.com/original/12ccf8/db0f1d5a4b41b66d3abcc9fba242">
+            </div>
+        </a>
+
+        <a class="slide slide03" href="https://allegro.pl/strefaokazji/allegro-days">
+            <div class="slide-left slide02">
+                <h1>3 dni tańszych zakupów</h1>
+                <h2>od poniedziałku do środy</h2>
+                <p></p>
+            </div>
+            <div class="slide-right slide03">
+                <img src="https://a.allegroimg.com/original/12ccf8/db0f1d5a4b41b66d3abcc9fba242">
+            </div>
+        </a>
+
+        <a class="slide slide04" href="https://allegro.pl/strefaokazji/allegro-days">
+            <div class="slide-left slide02">
+                <h1>4 dni tańszych zakupów</h1>
+                <h2>od poniedziałku do środy</h2>
+                <p></p>
+            </div>
+            <div class="slide-right slide04">
+                <img src="https://a.allegroimg.com/original/12ccf8/db0f1d5a4b41b66d3abcc9fba242">
+            </div>
+        </a>
+
+        <a class="slide slide05" href="https://allegro.pl/strefaokazji/allegro-days">
+            <div class="slide-left slide02">
+                <h1>5 dni tańszych zakupów</h1>
+                <h2>od poniedziałku do środy</h2>
+                <p></p>
+            </div>
+            <div class="slide-right slide05">
+                <img src="https://a.allegroimg.com/original/12ccf8/db0f1d5a4b41b66d3abcc9fba242">
+            </div>
+        </a>
+        
+
+
+    </div>
+    <div class="dots">
+        <span class="dot" ></span>
+        <span class="dot" ></span>
+        <span class="dot"></span>
+        <span class="dot" ></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+
+</body>
